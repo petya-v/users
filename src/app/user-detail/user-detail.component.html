@@ -1,0 +1,8 @@
+<div *ngIf="user">
+  <h3>User details:</h3>
+  <div>Id: {{user?.id}}</div>
+  <div>Username: {{user?.username}}</div>
+  <div>Name: {{user?.name}}</div>
+  <div>Age: {{user?.age}}</div>
+  <app-address [userId]="user.id"></app-address>
+</div>
