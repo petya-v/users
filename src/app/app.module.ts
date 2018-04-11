@@ -9,6 +9,7 @@ import { AddressComponent } from './user-detail/address/address.component';
 import {UsersService} from './users.service';
 import {AddressesService} from './addresses.service';
 import {HttpModule} from '@angular/http';
+import { AddUserComponent } from './add-user/add-user.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import {HttpModule} from '@angular/http';
     AppComponent,
     UsersComponent,
     UserDetailComponent,
-    AddressComponent
+    AddressComponent,
+    AddUserComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
 import {AddressesService} from '../../addresses.service';
 import {Address, AddressDetails} from '../../address';
 import {debug} from 'util';
@@ -8,23 +8,22 @@ import {debug} from 'util';
   templateUrl: './address.component.html',
   styleUrls: ['./address.component.css']
 })
-export class AddressComponent implements OnInit {
+export class AddressComponent implements OnChanges {
   @Input() userId: number;
   address: Array<Address> = [];
 
   constructor(private addressesService: AddressesService) { }
 
-  ngOnInit() {
+  ngOnChanges(changes: SimpleChanges): void {
     this.getAddressById();
   }
 
   getAddressById() {
     this.addressesService.getAddresses(this.userId)
-      .subscribe(address => this.address = address);
-    for(const item of this.address){
-      console.log(item.id);
-    }
-    debugger;
+      .subscribe(address => {
+        this.address = address;
+      });
+
   }
 
 

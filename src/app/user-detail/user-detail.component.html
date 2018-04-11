@@ -4,5 +4,6 @@
   <div>Username: {{user?.username}}</div>
   <div>Name: {{user?.name}}</div>
   <div>Age: {{user?.age}}</div>
+  <button (click)="removeUser(user.id)">x remove</button>
   <app-address [userId]="user.id"></app-address>
 </div>

@@ -14,15 +14,20 @@ export class UsersComponent implements OnInit {
   constructor(private userService: UsersService) { }
 
   ngOnInit() {
-    this.getUsers();
+    this.userService.refreshUsers();
+    this.users = this.userService.getUsers();
   }
 
   onButtonInfoClicked(user: User) {
     this.user.emit(user);
   }
   getUsers() {
-    this.userService.getUsersFromDB()
-      .subscribe(users => this.users = users);
+    this.users = this.userService.getUsers();
+  }
+
+  refreshUsers(){
+    this.userService.refreshUsers();
+    this.users = this.userService.getUsers();
   }
 
 }

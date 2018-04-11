@@ -10,7 +10,7 @@ export class AddressesService {
   constructor(private http: Http) { }
 
   getAddresses(userId: number) {
-    return this.http.get('http://192.168.0.100:3000/addresses?userid=' + userId)
+    return this.http.get('http://192.168.0.102:3000/addresses?userid=' + userId)
       .map(response => response.json()
         .map(jsonAddress => new Address(jsonAddress.id, jsonAddress.userId, jsonAddress.details)));
 

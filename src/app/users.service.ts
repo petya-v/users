@@ -5,13 +5,32 @@ import {User} from './user';
 
 @Injectable()
 export class UsersService {
+  users: Array<User> = [];
 
-  constructor(private http: Http) { }
+  constructor(private http: Http) {}
 
-  getUsersFromDB() {
-    return this.http.get('http://192.168.0.100:3000/users')
+  refreshUsers() {
+    this.users = [];
+    this.http.get('http://192.168.0.102:3000/users')
       .map(response => response.json()
-        .map(jsonUser => new User(jsonUser.id, jsonUser.username, jsonUser.name, jsonUser.age)));
+        .map(jsonUser => {
+          let user: User;
+          user = new User(jsonUser.username, jsonUser.name, jsonUser.age,jsonUser.id,);
+          this.users.push(user);
+        }))
+      .subscribe();
+  }
+
+  getUsers(){
+    return this.users;
+  }
+
+  addUserToDB(user: User) {
+    return this.http.post('http://192.168.0.102:3000/users', new User(user.username, user.name, user.age));
+  }
+
+  removeUserFromDB(idUser: number) {
+    return this.http.delete('http://192.168.0.102:3000/users/' + idUser);
   }
 
 }

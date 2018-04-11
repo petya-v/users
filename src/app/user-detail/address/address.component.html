@@ -1,2 +1,2 @@
 <h4>Address</h4>
-<label></label>
+<label *ngIf="address.length">Street: {{address[0].details?.streetAddress}}</label>
