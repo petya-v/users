@@ -1,0 +1,6 @@
+<div>
+  <div>Name: <input type="text" #name></div>
+  <div>Username: <input type="text" #username></div>
+  <div>Age: <input type="text" #age></div>
+  <button (click)="addUser(name.value, username.value, +age.value )">Add User</button>
+</div>
