@@ -10,6 +10,8 @@ import {UsersService} from './users.service';
 import {AddressesService} from './addresses.service';
 import {HttpModule} from '@angular/http';
 import { AddUserComponent } from './add-user/add-user.component';
+import {RouterModule} from '@angular/router';
+import {userRouts} from './users.routes';
 
 
 @NgModule({
@@ -22,7 +24,8 @@ import { AddUserComponent } from './add-user/add-user.component';
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot(userRouts)
   ],
   providers: [UsersService, AddressesService],
   bootstrap: [AppComponent]

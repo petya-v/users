@@ -2,7 +2,7 @@
 <ol>
   <li *ngFor="let user of users">
     {{user.name}}
-    <button (click)="onButtonInfoClicked(user)">Info</button>
+    <button [routerLink]="'/user-details/' + user.id">Info</button>
   </li>
 </ol>
 <button (click)="refreshUsers()">Refresh</button>
