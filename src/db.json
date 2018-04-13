@@ -1,0 +1,178 @@
+{
+  "users": [
+    {
+      "id": 15132,
+      "username": "SexyAsFuck",
+      "name": "Alex Roazen",
+      "age": 28
+    },
+    {
+      "id": 15138,
+      "username": "LDupuy",
+      "name": "Takisha Emery",
+      "age": 73
+    },
+    {
+      "id": 15139,
+      "username": "KRydinsky",
+      "name": "Anuraag Krynsky",
+      "age": 72
+    },
+    {
+      "id": 15140,
+      "username": "RWolfgram",
+      "name": "Jasper Wantland",
+      "age": 38
+    },
+    {
+      "id": 15141,
+      "username": "CDerp",
+      "name": "Sandra Rice",
+      "age": 41
+    },
+    {
+      "id": 15142,
+      "username": "JGrimm",
+      "name": "Nalika Deluca",
+      "age": 40
+    },
+    {
+      "id": 15143,
+      "username": "MFielack",
+      "name": "Courtney Pearlstein",
+      "age": 18
+    },
+    {
+      "id": 15144,
+      "username": "PKerkemeyer",
+      "name": "Lori Walters",
+      "age": 76
+    },
+    {
+      "id": 15145,
+      "username": "YHeilman",
+      "name": "Rajae Thompson",
+      "age": 29
+    },
+    {
+      "id": 15146,
+      "username": "RLencowski",
+      "name": "Calvin Holmes",
+      "age": 27
+    },
+    {
+      "id": 15148,
+      "username": "ACastellanos",
+      "name": "Ravi Cheng",
+      "age": 53
+    },
+    {
+      "id": 15149,
+      "username": "BKoprowski",
+      "name": "Roosevelt Alagisan",
+      "age": 73
+    },
+    {
+      "id": 15150,
+      "username": "LSilverio",
+      "name": "Alvin Jean",
+      "age": 62
+    },
+    {
+      "id": 15151,
+      "username": "TGrunert",
+      "name": "Ted Leavitt",
+      "age": 51
+    },
+    {
+      "id": 15152,
+      "username": "JLlaneza",
+      "name": "Jesse Kane",
+      "age": 47
+    },
+    {
+      "id": 15153,
+      "username": "CHaskin",
+      "name": "Vonnie Jacobs",
+      "age": 61
+    },
+    {
+      "id": 15167,
+      "username": "ABaligian",
+      "name": "Kristy Mclaughlin",
+      "age": 43
+    }
+  ],
+  "addresses": [
+    {
+      "id": 15072,
+      "userid": 15132,
+      "details-lol": {
+        "streetAddress": "7030 Morbi Dr",
+        "city": "North Kingstown",
+        "state": "AK",
+        "zip": "88132"
+      }
+    },
+    {
+      "id": 15074,
+      "userid": 15135,
+      "details": {
+        "streetAddress": "3347 Hendrerit Dr",
+        "city": "Woodbridge",
+        "state": "PA",
+        "zip": "19190"
+      }
+    },
+    {
+      "id": 15076,
+      "userid": 15136,
+      "details": {
+        "streetAddress": "2191 Sit Ave",
+        "city": "Dayton",
+        "state": "SC",
+        "zip": "78525"
+      }
+    },
+    {
+      "id": 15078,
+      "userid": 15137,
+      "details": {
+        "streetAddress": "5903 Odio Rd",
+        "city": "Montreal",
+        "state": "ME",
+        "zip": "20827"
+      }
+    },
+    {
+      "id": 15080,
+      "userid": 15138,
+      "details": {
+        "streetAddress": "3530 Ipsum Ct",
+        "city": "Nashville",
+        "state": "HI",
+        "zip": "48090"
+      }
+    },
+    {
+      "id": 15082,
+      "userid": 15139,
+      "details": {
+        "streetAddress": "4214 Rutrum Ave",
+        "city": "Lacey",
+        "state": "NE",
+        "zip": "46020"
+      }
+    },
+    {
+      "id": 15084,
+      "userid": 15140,
+      "details": {
+        "streetAddress": "7252 Tellus Ct",
+        "city": "Moulton",
+        "state": "WV",
+        "zip": "61560"
+      }
+    }
+  ]
+}
